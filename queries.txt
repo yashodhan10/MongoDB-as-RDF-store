@@ -1,0 +1,17 @@
+-- Query for retrieving which has anti keyword
+
+db.py.find({"relation": [{"predicate": { $regex : ".*anti.*"}}]})
+
+-- Query for retrieving particular object
+
+db.pt.find({"relation":{"$elemMatch": {"object": "CN1C=NC2=C1C(=O)N(C)C(=O)N2C"}}})
+
+db.pt.find({"relation":{"$elemMatch": {"object": {$regex:".*Alemtuzumab.*"}}}})
+
+--Query to retrieve information about particular drug
+
+db.pt.find({"subject" :"http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00001"}, {_id:0, "subject" :0, "relation.object":0})
+db.pt.find({"subject" :"http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00001"}, {_id:0, "subject" :0, "relation.object":0})
+
+
+db.pt.find({"subject" :"http://www4.wiwiss.fu-berlin.de/drugbank/resource/drugs/DB00001"}, {_id:0, "subject" :0, "relation.object":0})
