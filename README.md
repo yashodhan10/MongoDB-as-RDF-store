@@ -7,6 +7,6 @@ This project mainly focuses on how mongodb can be used as a RDF store. Being a d
 Currently I'm working with only triples. RDF files can be .rdf,.nt. nq etc. 
 
 For running code, load.py is the main file. In queries text file, I have given all the working queries and run it in the mongodb.
-Sample file contains few sample triples to work with. 
+ed.nt file contains few sample triples to work with. 
 
 
